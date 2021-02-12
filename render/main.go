@@ -49,7 +49,7 @@ type data struct {
 func createBody() (string, error) {
 	t, err := template.New("tmpl").Parse(html)
 	if err != nil {
-		return "err1", err
+		return "html parse error", err
 	}
 	var w bytes.Buffer
 	d := data{
@@ -58,7 +58,7 @@ func createBody() (string, error) {
 		Time:    time.Now(),
 	}
 	if err := t.Execute(&w, d); err != nil {
-		return "err2", err
+		return "html template execute error", err
 	}
 	return w.String(), nil
 }
