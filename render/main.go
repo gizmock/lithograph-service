@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <body>
 <h1>{{.Title}}</h1>
 <p>{{.Message}}</p>
-<p>米国の現在時間は {{.Time.Format "2006/1/2 15:04:05"}}</p>
+<p>米国の現在時間 {{.Time.Format "2006/1/2 15:04:05"}}</p>
 </body>
 </html>
 `
