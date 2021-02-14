@@ -53,7 +53,7 @@ func createBody() (string, error) {
 	}
 	var w bytes.Buffer
 	d := data{
-		Title:   "サーバーレスCMS",
+		Title:   "サーバーレスCMSです",
 		Message: "ようこそ",
 		Time:    time.Now(),
 	}
